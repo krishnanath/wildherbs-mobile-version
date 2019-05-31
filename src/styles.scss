@@ -1,0 +1,48 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+/* You can add global styles to this file, and also import other style files */
+
+@font-face {
+    font-family: NexaLight;
+    src: url('/assets/fonts/nexa/NexaLight2.otf');
+}
+
+@font-face {
+    font-family: NexaXBold;
+    // src: url('/assets/fonts/nexa/NexaXBold.otf');
+    src: url('/assets/fonts/nexa/NexaBlack.otf');
+}
+
+@font-face {
+    font-family: NexaBold;
+    // src: url('/assets/fonts/nexa/NexaXBold.otf');
+    src: url('/assets/fonts/nexa/NexaBold.otf');
+}
+
+@font-face {
+    font-family: NexaBlack;
+    // src: url('/assets/fonts/nexa/NexaXBold.otf');
+    src: url('/assets/fonts/nexa/NexaBlack.otf');
+}
+
+@font-face {
+    font-family: NexaRegular;
+    // src: url('/assets/fonts/nexa/NexaXBold.otf');
+    src: url('/assets/fonts/nexa/NexaRegular.otf');
+}
+
+@font-face {
+    font-family: NexaLight;
+    // src: url('/assets/fonts/nexa/NexaXBold.otf');
+    src: url('/assets/fonts/nexa/NexaLight.otf');
+}
+
+body {
+    margin: 0;
+}
+
+.text-par {
+    color: #1b566e !important;
+    font-family: NexaLight !important;
+}

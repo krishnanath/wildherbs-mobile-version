@@ -1,0 +1,195 @@
+ // MAIN
+ .grid {
+     display: grid;
+     grid-template-columns: repeat(3, 10% 80% 10%);
+ }
+ 
+ .main {
+     margin-top: 55px;
+ }
+ 
+ .container {
+     //margin-top: 111px;
+ }
+ 
+ .hed {
+     margin-top: 18px;
+     font-family: NexaBold;
+     text-transform: uppercase;
+     font-size: 27px;
+     color: #f7444e;
+ }
+ 
+ .text-par {
+     // margin-top: -18px;
+     max-width: 888px;
+ }
+ 
+ .sub-hed {
+     // margin-top: -22px !important;
+     font-size: 15px;
+     font-weight: bolder !important;
+ }
+ 
+ .sub-hed2 {
+     font-size: 15px;
+     font-weight: bolder !important;
+     font-family: NexaBold;
+     color: #002c3e !important;
+ }
+ 
+ .names {
+     font-family: NexaRegular;
+     margin-top: 3px;
+     text-align: center;
+     //margin-left: -88px;
+     text-transform: uppercase;
+     color: #f7444e;
+     font-size: 14px;
+ }
+ 
+ //  FANCY FORM
+ #form-box {
+     margin-top: 11px;
+     margin-bottom: 33px;
+     background: #1B566E;
+     position: relative;
+     max-width: 888px;
+     border-top-right-radius: 5px;
+     border-top-left-radius: 5px;
+     box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.1), 0 6px 10px 5px rgba(0, 0, 0, 0.1), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+     transition: transform 0.1s ease-in-out;
+     &:hover {
+         // transform: translate(0px, 10px);
+     }
+ }
+ 
+ #form-box.close {
+     width: 0;
+     padding: 0;
+     overflow: hidden;
+     transition: 0.8s ease-in-out;
+     box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0);
+ }
+ 
+ #next-btn {
+     position: absolute;
+     right: 20px;
+     bottom: 10px;
+     font-size: 40px;
+     color: white;
+     float: right;
+     cursor: pointer;
+     z-index: 2;
+     &:hover {
+         color: rgb(240, 230, 230);
+     }
+ }
+ 
+ #prev-btn {
+     position: absolute;
+     font-size: 18px;
+     left: 30px;
+     top: 12px;
+     z-index: 2;
+     color: transparent;
+     float: right;
+     cursor: pointer;
+     &:hover {
+         color: white;
+     }
+ }
+ 
+ #input-group {
+     position: relative;
+     padding: 30px 20px 20px 20px;
+     margin: 10px 60px 0px 10px;
+     opacity: 0;
+     transition: opacity 0.3s ease-in-out;
+     input {
+         position: relative;
+         width: 100%;
+         border: none;
+         font-size: 18px;
+         font-weight: lighter;
+         outline: 0;
+         background: transparent;
+         box-shadow: none;
+         color: white;
+     }
+     #input-label {
+         position: absolute;
+         pointer-events: none;
+         top: 32px;
+         left: 20px;
+         font-size: 15px;
+         font-family: NexaRegular;
+         font-weight: lighter;
+         transition: 0.2s ease-in-out;
+         color: white;
+     }
+     input:valid+#input-label {
+         top: 3px;
+         left: 42px;
+         margin-left: 0 !important;
+         font-size: 11px;
+         font-weight: normal;
+         color: #3daea7;
+     }
+ }
+ 
+ #input-progress {
+     border-bottom: 1px solid #3daea7;
+     width: 0;
+     transition: width 0.6s ease-in-out;
+ }
+ 
+ #progress-bar {
+     position: absolute;
+     background: #3daea7;
+     height: 11px;
+     width: 0;
+     transition: width 0.5s ease-in-out;
+ }
+ 
+ .end {
+     font-family: NexaRegular !important;
+ }
+ 
+ .close {
+     #next-btn,
+     #prev-btn {
+         color: #fff;
+     }
+ }
+ 
+ .error {
+     #input-progress {
+         border-color: #f7444e;
+     }
+     #next-btn {
+         color: #f7444e;
+     }
+ }
+ 
+ //   Location SVG
+ .location {
+     display: grid;
+     grid-template-rows: repeat(3, auto);
+     grid-gap: 22px;
+     justify-content: center;
+ }
+ 
+ .locationsvg {
+     width: 188px;
+     height: 188px;
+ }
+ 
+ //   TRANSITION
+ .up-nav {
+     position: fixed;
+     z-index: 9999;
+     background: white;
+     height: 55px;
+     //  width: 100%;
+ }

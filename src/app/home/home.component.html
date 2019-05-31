@@ -1,0 +1,220 @@
+<head>
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.6/jquery.pagepiling.css" />
+    <!-- <link rel="stylesheet" href="../" /> -->
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.6/jquery.pagepiling.js"></script>
+    <!-- <script src="/node_modules/pagepiling.js/jquery.pagepiling.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TimelineMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.min.js"></script>
+</head>
+
+<body>
+    <!-- <app-navbar></app-navbar> -->
+
+    <div id="pagepiling">
+        <div class="up-nav">
+            <app-navbar></app-navbar>
+
+        </div>
+
+        <div class="section section1">
+            <!-- <app-navbar></app-navbar> -->
+            <div class="home">
+
+                <div class="robo">
+                    <img class="robot" src="assets/robot-gif-03.gif">
+                </div>
+                <div class="typo">
+                    <div class="hed">
+                        <h1 class="robo-h1">We<br>
+                            <!-- <span class="txt-type" data-wait="3000" data-words='["LISTEN", " DESIGN", "BUILD"]'></span> -->
+                            <div class="set-height">
+                                <span class="txt-type" data-wait="3000" data-words='["Listen", " Design", "Build"]'></span>
+                            </div>
+
+
+                            <h2 class="fix-txt robo-h2">
+                                your most ambitious tech ideas.
+                                <!-- <span class="txt-type" data-wait="3000" data-words='["Your most ambitious tech ideas."]'></span> -->
+
+                            </h2>
+
+                        </h1>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="section section2">
+
+            <div class="digital-presence">
+
+
+                <div class="svg-dp">
+                    <img class="dp-svg" src="assets/SVG/home/DPM.svg">
+
+
+                </div>
+                <div class="des-dp">
+                    <h2 class="dp-h2">
+                        Digitial presence<br> management
+                    </h2>
+                    <p class="text-par ls-mar">
+                        Do you have a compelling digitial presence that attracts, retains and delights your customers?
+                    </p>
+                    <ul class="ul">
+                        <li>iOS and Android Apps Development</li>
+                        <li>Website development</li>
+                        <li>Social Media & Digitial Presence Audit</li>
+                    </ul>
+                    <button class="req-quote" id="show">Request a quote</button>
+
+
+                </div>
+
+            </div>
+
+        </div>
+        <div class="section section3">
+
+
+            <div class="digital-presence">
+
+                <div class="svg-dp">
+                    <img class="dp-svg" src="assets/SVG/home/AI.svg">
+
+
+                </div>
+                <div class="des-dp">
+                    <h2 class="dp-h2">
+                        AI powered solutions
+                    </h2>
+                    <p class="text-par ls-mar">
+                        have you considered using emerging technologies to create a better customer experience?
+                    </p>
+                    <ul class="ul">
+                        <li> AI powered chat bots</li>
+                        <li> Recommendation Engines</li>
+                    </ul>
+                    <button class="req-quote">Request a quote</button>
+
+
+                </div>
+
+            </div>
+
+        </div>
+        <div class="section section4">
+
+            <div class="digital-presence">
+
+                <div class="svg-dp">
+                    <img class="dp-svg" src="assets/SVG/home/DS.svg">
+
+
+                </div>
+                <div class="des-dp">
+                    <h2 class="dp-h2">
+                        Data Science
+                    </h2>
+                    <p class="text-par ls-mar">
+                        Can your data give actionable insights to build your brand?
+                    </p>
+                    <ul class="ul">
+                        <li> Data Visualization</li>
+                        <li> Data Driven Applications</li>
+
+                    </ul>
+                    <button class="req-quote">Request a quote</button>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- REQUEST A DEMO -->
+    <!-- NAVBAR -->
+
+    <div id="nav" class="navigation">
+
+
+        <div class="navigation__inner">
+
+            <div class="close-container" id="close">
+                <div class="leftright"></div>
+                <div class="rightleft"></div>
+                <label class="close">close</label>
+            </div>
+
+            <div class="nav-content">
+                <h2 class="navhed">Say hello. </h2>
+                <p class="text-par neg-mar">Contact us and get yourself a technology partner who will bring actionable insights & smart solutions to drive your buisness.
+                    <br><br><strong> Email:</strong>
+
+                    <b> <a class="a">hello@wildherbstechnologies.com   </a></b>
+
+                </p>
+
+                <h2 class="navhed">Request a quote.</h2>
+                <form action="/action_page.php" class="text-par">
+                    <p class="text-par"> <b>Name *</b></p>
+
+                    <input class="text" type="text" required>
+                    <p class="text-par"> <b>Email *</b></p>
+
+                    <input class="text" type="text" required>
+
+                    <p class="text-par"><b>Select requirement *</b></p>
+
+                    <div class="chkbx">
+                        <div>
+                            <input type="checkbox" required> Websites
+                        </div>
+                        <div>
+                            <input type="checkbox"> Mobile apps
+                        </div>
+                        <div>
+                            <input type="checkbox"> Data visualization
+                        </div>
+                        <div>
+                            <input type="checkbox"> AI chat bots
+                        </div>
+                        <div>
+                            <input type="checkbox"> Digitial presence management
+                        </div>
+                        <div>
+                            <input type="checkbox"> Others
+                        </div>
+
+                    </div>
+                    <!-- END CHECKBOX -->
+                    <br>
+                    <input type="text" class="text">
+
+                    <p class="text-par"><b>Message *</b></p>
+                    <textarea class="comment"></textarea>
+                    <br>
+                    <br>
+                    <button class="submit"> submit</button>
+
+                </form>
+
+
+
+            </div>
+
+        </div>
+    </div>
+
+
+</body>
